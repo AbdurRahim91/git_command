@@ -1,0 +1,40 @@
+Your Identity
+The first thing you should do when you install Git is to set your user name and email address. 
+This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+
+$ git config --global user.name "John Doe"
+$ git config user.name
+
+$ git config --global user.email johndoe@example.com
+$ git config user.email
+-----------------------------------------------------------------------
+You can view all of your settings and where they are coming from using:
+
+$ git config --list --show-origin
+$ git config --list
+----------------------------------
+Checking the Status of Your Files
+
+$ git status
+--------------
+To see what you’ve changed but not yet staged, type git diff with no other arguments:
+
+$ git diff
+----------------
+create a new repository on the command line (main/master)
+--------------------------------------------
+
+echo "# git_command" >> README.md
+$ git init
+$ git add file_name with extention or dot (.) for all file and folder adding
+$ git status
+$ git commit -m "first commit"
+$ git branch -M main
+$ git remote add origin https://github.com/AbdurRahim91/git_command.git
+$ git push -u origin main
+
+…or push an existing repository from the command line 
+---------------------------------------------------------
+$ git remote add origin https://github.com/AbdurRahim91/git_command.git
+$ git branch -M main
+$ git push -u origin main
